@@ -1,0 +1,153 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #996E89;
+  font-family: "Comfortaa", sans-serif;
+}
+
+h1 {
+  font-family: "Lobster", serif;
+  color: white;
+}
+
+.container{
+	text-align: center;
+}
+
+
+  label {
+    font-size: 4em;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+  input[type=radio] {
+    margin: 1em;
+    cursor: pointer;
+  }
+  fieldset {
+    display: block;
+    opacity: 1;
+    transition: all ease 1s;  
+  }
+  &.game-on fieldset {
+    opacity: 0;
+    display: none;
+  }    
+  &.game-on button {
+    opacity: 1;
+    display: block;
+    margin: 0 auto;
+  }
+
+#intro-section{
+	padding: 0;
+	
+	color: #fafafa;
+	background-color: #996E89;
+}
+ 
+#formulario{
+	display: block;
+	background-color: #885A78;
+	border-top: none;
+	border-right: none;
+	border-radius: 20px;
+  width: 50%;
+  padding: 0.2rem;
+  
+}
+#formulario hr{
+   background-color: black;
+   width: 50%;
+   margin-bottom: 5px;
+}
+
+.campos{
+	padding-bottom: 100px;
+}
+
+.game-container{
+  margin-top: -2px;
+	display: none;
+	grid-template-columns: repeat(3, auto);
+	width: 306px;
+	margin: 50px auto;
+}
+.intro-section{
+	display: block;
+}
+.marcador{
+	font-family: "Lobster", serif;
+  color: black;
+  font-size: 25px;
+}
+
+.game-cell{
+	 border: 1px solid #000;
+  width: 100px; 
+  height: 100px;
+  display: block;
+  float: left;
+  font-size: 3em;
+  text-align: center;
+  padding: .5em;}
+
+#c1, #c2, #c3 {
+  border-top: none;
+}
+
+#c1:hover, #c2:hover, #c3:hover, #c4:hover, #c5:hover, #c6:hover, #c7:hover, #c8:hover, #c9:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#c3, #c6, #c9 {
+  border-right: none;
+}
+
+ 
+
+#c7, #c8, #c9 {
+  border-bottom: none;
+}
+
+#c1, #c4, #c7 {
+  border-left: none;
+}
+
+
+.reiniciar{
+	background-color: #33B7A5;
+	width: 100px;
+	font-size: 15px;
+	border-radius: 8px;
+	border: 2px solid #4CAF;
+	color: white;
+}
+
+.reiniciar:hover{
+	background-color: #4C2F39;
+	border: 2px solid #4C2F39;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.iniciar{
+	background-color: #008CBA;
+	width: 100px;
+	font-size: 15px;
+	border-radius: 8px;
+	border: 2px solid #008CBA;
+	color: white;
+
+}
+
+
+.iniciar:hover{
+	background-color: #4C2F39;
+	border: 2px solid #4C2F39;
+	box-shadow: 0 12px 16px 0 r
+}
